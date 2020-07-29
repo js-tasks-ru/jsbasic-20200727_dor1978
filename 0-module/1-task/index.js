@@ -6,4 +6,5 @@
  */
 function sum(m, n) {
   // ваш код...
+  let total = m + n;
 }
