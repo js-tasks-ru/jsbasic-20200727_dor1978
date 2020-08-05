@@ -4,5 +4,11 @@
  * @returns {Number}
  */
 function sumSalary(salaries) {
-  // ваш код...
+  let total = 0;
+  for (let key in salaries) {
+    if (salaries[key] > 1) {
+      total += salaries[key];
+    }
+  }
+  return total;
 }
