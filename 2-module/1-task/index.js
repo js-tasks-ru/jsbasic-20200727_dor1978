@@ -6,8 +6,7 @@
 function sumSalary(salaries) {
   let total = 0;
   for (let key in salaries) {
-    if (salaries[key] > 0) {
-      console.log(salaries[key]);
+    if (salaries[key] > 1) {
       total += salaries[key];
     }
   }
