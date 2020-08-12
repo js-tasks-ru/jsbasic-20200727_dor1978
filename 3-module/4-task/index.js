@@ -5,5 +5,20 @@
  * @returns {string}
  */
 function showSalary(users, age) {
-  // ваш код...
+  let arr = users.map(function (item) {
+    if (item.age <= age) {
+      return item.name + ', ' + item.balance;
+    }
+  });
+
+  let newArr = [];
+
+  for (let user of arr) {
+    if (user !== undefined) {
+      newArr.push(user);
+    }
+  }
+
+  let str = newArr.join('\n');
+  return str;
 }
