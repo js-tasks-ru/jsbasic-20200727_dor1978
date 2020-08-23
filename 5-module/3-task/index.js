@@ -22,6 +22,7 @@ function initCarousel() {
 
   function translateLeft() {
     inner.style.transform = `translateX(${-(count - 1) * width}px)`;
+
     count--;
 
     if (count < 3) {
