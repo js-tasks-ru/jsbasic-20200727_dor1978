@@ -6,7 +6,6 @@ export default class ProductCard {
     this.elem.className = "card";
     this.product = product;
 
-
     let template = `
       <div class="card">
         <div class="card__top">
