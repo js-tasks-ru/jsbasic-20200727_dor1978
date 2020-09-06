@@ -77,7 +77,6 @@ export default class Carousel {
 
     for (let slide of slides) {
       button.addEventListener('click', () => {
-        console.log(button);
         button.dispatchEvent(new CustomEvent('product-add', {
           detail: slide.id,
           bubbles: true
