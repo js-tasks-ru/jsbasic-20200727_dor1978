@@ -28,7 +28,7 @@ export default class Modal {
     this.modalClose.onclick = this.close;
 
     this.elem = document.body;
-    this.elem.onkeyup = this.escape;
+    this.elem.onkeydown = this.escape;
   }
 
   setTitle(title) {
